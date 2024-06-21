@@ -1,0 +1,12 @@
+<div appTalkative>
+    Click me to see a random message
+  </div>
+  
+  <app-spinning-wheel></app-spinning-wheel>
+
+
+  <p [ngStyle]="{'color': input.length < 5? 'gray' : 'black'}">
+    {{ input | Placeholder: 'Enter at least 5 characters' : 5 }}
+  </p>
+  
+  <input type="text" [(ngModel)]="input">
